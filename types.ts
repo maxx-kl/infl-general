@@ -448,7 +448,7 @@ export function cleanDraftInfo(draft: DraftInfo): DraftInfo {
   return cleanedDraft as DraftInfo;
 }
 
-interface Translation {
+export interface Translation {
   original: string;
   detectedLanguage: string;
   translations: ObjMap<string>;

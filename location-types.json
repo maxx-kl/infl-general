@@ -1,953 +1,955 @@
 {
-  "ASP": {
-    "canBeLocatedIn": {
-      "FPD": true
-    },
-    "canContainTypes": {
-      "equipment": true
-    },
-    "description": "Blows and sterile fills PET bottles for long shelf-life beverages",
-    "name": "Aseptic PET Bottle Line",
-    "type": "line"
-  },
-  "BGL": {
-    "canBeLocatedIn": {
-      "FPD": true
-    },
-    "canContainTypes": {
-      "equipment": true
-    },
-    "description": "Fills and caps beverages in glass bottles",
-    "name": "Glass Bottle Line",
-    "type": "line"
-  },
-  "CAN": {
-    "canBeLocatedIn": {
-      "FPD": true
-    },
-    "canContainTypes": {
-      "equipment": true
-    },
-    "description": "Fills and seals aluminum or tinplate beverage cans",
-    "name": "Can Line",
-    "type": "line"
-  },
-  "FPD": {
-    "canBeLocatedIn": {
-      "brewery": true
-    },
-    "canContainTypes": {
-      "equipment": true,
-      "line": true
-    },
-    "description": "Area where the final liquid product is prepared for distribution and sale",
-    "name": "Filling and Packaging",
-    "type": "department"
-  },
-  "KEG": {
-    "canBeLocatedIn": {
-      "FPD": true
-    },
-    "canContainTypes": {
-      "equipment": true
-    },
-    "description": "Fills, seals, and labels large metal or plastic kegs",
-    "name": "Keg Line",
-    "type": "line"
-  },
-  "PET": {
-    "canBeLocatedIn": {
-      "FPD": true
-    },
-    "canContainTypes": {
-      "equipment": true
-    },
-    "description": "Blows and fills plastic (PET) bottles",
-    "name": "PET Bottle Line",
-    "type": "line"
-  },
-  "asepticFiller": {
-    "canBeLocatedIn": {
-      "ASP": true
-    },
-    "description": "Fills containers in sterile environment",
-    "name": "Aseptic Filler",
-    "type": "equipment"
-  },
-  "blowMolder": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Molds PET preforms into bottles/kegs",
-    "name": "Blow Molder",
-    "type": "equipment"
-  },
-  "blowMolderChiller": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Uses glycol to cool down molds",
-    "name": "Blow Molder Chiller",
-    "type": "equipment"
-  },
-  "bottleColorShapeInspector": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Determines if bottle is of correct type",
-    "name": "Bottle Color/Shape Inspector",
-    "type": "equipment"
-  },
-  "bottleWasher": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Washes bottles inside and outside with cleaning liquid",
-    "name": "Bottle Washer",
-    "type": "equipment"
-  },
   "brewery": {
-    "canContainTypes": {
-      "department": true
-    },
-    "description": "Facility that produces beer and other beverages",
-    "name": "Brewery",
-    "type": "facility"
-  },
-  "capper": {
-    "canBeLocatedIn": {
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Seals bottles with caps",
-    "name": "Capper",
-    "type": "equipment"
-  },
-  "capperCapSupply": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Supplies caps to the capper",
-    "name": "Capper Cap Supply",
-    "type": "equipment"
-  },
-  "cartonPacker": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Packs containers into carton box",
-    "name": "Carton Packer",
-    "type": "equipment"
-  },
-  "cipStation": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Station for equipment cleaning in place",
-    "name": "CIP Station",
-    "type": "equipment"
-  },
-  "containerDryer": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Dries containers before labeling",
-    "name": "Container Dryer",
-    "type": "equipment"
-  },
-  "conveyorLubricantSystem": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Supplies lubricant solution to conveyors",
-    "name": "Conveyor Lubricant System",
-    "type": "equipment"
-  },
-  "crateConveyor": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Transports crates from depaletizing to palletizing area",
-    "name": "Crate Conveyor",
-    "type": "equipment"
-  },
-  "crateDepalletizer": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Unloads crates crates from pallets",
-    "name": "Crate Depalletizer",
-    "type": "equipment"
-  },
-  "cratePacker": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Packs bottles into crates",
-    "name": "Crate Packer",
-    "type": "equipment"
-  },
-  "cratePalletizer": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Stacks crates onto pallets",
-    "name": "Crate Palletizer",
-    "type": "equipment"
-  },
-  "crateUnpacker": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Unpacks bottles from crates",
-    "name": "Crate Unpacker",
-    "type": "equipment"
-  },
-  "crateWasher": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Rinses/cleans crates ",
-    "name": "Crate Washer",
-    "type": "equipment"
-  },
-  "cratesPathSplitter": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Splits flow of crates from one line conveyor to several",
-    "name": "Crates Path Splitter",
-    "type": "equipment"
-  },
-  "emptyBottleConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Transports empty glass/plastic bottles to rinser/filler",
-    "name": "Empty Bottle Conveyor",
-    "type": "equipment"
-  },
-  "emptyBottleInspector": {
-    "canBeLocatedIn": {
-      "BGL": true
-    },
-    "description": "Inspects bottle quality before filling",
-    "name": "Empty Bottle Inspector",
-    "type": "equipment"
-  },
-  "emptyCanInspector": {
-    "canBeLocatedIn": {
-      "CAN": true
-    },
-    "description": "Inspects can quality before filling",
-    "name": "Empty Can Inspector",
-    "type": "equipment"
-  },
-  "emptyCanRopeConveyor": {
-    "canBeLocatedIn": {
-      "CAN": true
-    },
-    "description": "Transports empty cans to rinser/filler",
-    "name": "Empty Can Rope Conveyor",
-    "type": "equipment"
-  },
-  "emptyKegConveyor": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Transports empty kegs to rinser/filler",
-    "name": "Empty Keg Conveyor",
-    "type": "equipment"
-  },
-  "emptyPalletConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Supplies empty pallets to palletizer",
-    "name": "Empty Pallet Conveyor",
-    "type": "equipment"
-  },
-  "emptyPetBottleAirConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "PET": true
-    },
-    "description": "Transports empty PET bottles to rinser/filler",
-    "name": "Empty PET Bottle Air Conveyor",
-    "type": "equipment"
-  },
-  "exciseUnit": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Gets excise info for tax services",
-    "name": "Excise Unit",
-    "type": "equipment"
-  },
-  "fillLevelInspector": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Checks liquid levels in sealed containers",
-    "name": "Fill Level Inspector",
-    "type": "equipment"
-  },
-  "fillLevelKegScales": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Checks liquid weight in kegs",
-    "name": "Fill Level Keg Scales",
-    "type": "equipment"
-  },
-  "filledContainerConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Moves filled bottles/cans to packaging area",
-    "name": "Filled Container Conveyor",
-    "type": "equipment"
-  },
-  "filledKegConveyor": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Moves filled kegs to packaging area",
-    "name": "Filled Keg Conveyor",
-    "type": "equipment"
-  },
-  "filler": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Fills containers with liquid",
-    "name": "Filler",
-    "type": "equipment"
-  },
-  "flashPasteurizer": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Pasteurizes product before being filled",
-    "name": "Flash Pasteurizer",
-    "type": "equipment"
-  },
-  "foamSupplySystem": {
-    "canBeLocatedIn": {
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "PET": true
-    },
-    "description": "Supplies foam for filler cleaning",
-    "name": "Foam Supply System",
-    "type": "equipment"
-  },
-  "fullPalletConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Moves full pallets to storage/distribution area",
-    "name": "Full Pallet Conveyor",
-    "type": "equipment"
-  },
-  "general": {
-    "canBeLocatedIn": {
-      "*": true
-    },
-    "description": "General location or equipment group",
-    "name": "General",
-    "type": "general"
-  },
-  "handleApplicator": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "PET": true
-    },
-    "description": "Applies handles to PET bottles before packaging",
-    "name": "Handle Applicator",
-    "type": "equipment"
-  },
-  "highPressurePumpSystem": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Provides liquid with high pressure for cleaning",
-    "name": "High Pressure Pump System",
-    "type": "equipment"
-  },
-  "inlineQualityControl": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Checks product quality before filling",
-    "name": "Inline Quality Control",
-    "type": "equipment"
-  },
-  "kegCleaningLiquidsSupply": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Supplies cleaning liquids for keg cleaning",
-    "name": "Keg Cleaning Liquids Supply",
-    "type": "equipment"
-  },
-  "kegInnerCleaner": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Cleans kegs inside",
-    "name": "Keg Inner Cleaner",
-    "type": "equipment"
-  },
-  "kegLeakageInspector": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Detects leakages at filled kegs",
-    "name": "Keg Leakage Inspector",
-    "type": "equipment"
-  },
-  "kegPalletizer": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Stacks kegs onto pallets",
-    "name": "Keg Palletizer",
-    "type": "equipment"
-  },
-  "kegResidualPressureInspector": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Detects if empty keg has residual pressure",
-    "name": "Keg Residual Pressure Inspector",
-    "type": "equipment"
-  },
-  "kegWasher": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Washes kegs outside",
-    "name": "Keg Washer",
-    "type": "equipment"
-  },
-  "labelApplicatorForContainers": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Applies labels for date/batch/excise coding on containers",
-    "name": "Label Applicator for Containers",
-    "type": "equipment"
-  },
-  "labelApplicatorForPacks": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Applies labels for date/batch coding on packs",
-    "name": "Label Applicator for Packs",
-    "type": "equipment"
-  },
-  "labelApplicatorForPallets": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Applies labels for date/batch/logistics coding on pallets",
-    "name": "Label Applicator for Pallets",
-    "type": "equipment"
-  },
-  "labelInspector": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Verifies label position and quality on containers",
-    "name": "Label Inspector",
-    "type": "equipment"
-  },
-  "labelPositioningSystem": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Determines correct bottle angle to put label",
-    "name": "Label Positioning System",
-    "type": "equipment"
-  },
-  "labellerColdGlue": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Applies labels with cold glue",
-    "name": "Labeller - Cold Glue",
-    "type": "equipment"
-  },
-  "labellerHotGlue": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Applies labels using hot glue",
-    "name": "Labeller - Hot Glue",
-    "type": "equipment"
-  },
-  "labellerSelfAdhesive": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Applies self-adhesive labels",
-    "name": "Labeller - Self-Adhesive",
-    "type": "equipment"
-  },
-  "labellerServoDrives": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Servo drives system of modular labeller",
-    "name": "Labeller Servo Drives",
-    "type": "equipment"
-  },
-  "labellerShrinkSleeve": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Applies shrink sleeve labels",
-    "name": "Labeller - Shrink Sleeve",
-    "type": "equipment"
-  },
-  "mixer": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Mixes water, syrup and CO2 to prepare soft drink ",
-    "name": "Mixer",
-    "type": "equipment"
-  },
-  "modularLabeller": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Applies various label types using interchangeable modules",
-    "name": "Modular Labeller",
-    "type": "equipment"
-  },
-  "monoblockFillerSealer": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Fills and seals containers",
-    "name": "Monoblock Filler/Capper",
-    "type": "equipment"
-  },
-  "monoblockKegCleanerFiller": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Cleans inside (CIP), sterilizes and fills kegs",
-    "name": "Monoblock Keg Cleaner/Filler",
-    "type": "equipment"
-  },
-  "monoblockRinserFiller": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Rinses and fills containers",
-    "name": "Monoblock Rinser/Filler",
-    "type": "equipment"
-  },
-  "monoblockRinserFillerCapper": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Rinses, fills and seals containers",
-    "name": "Monoblock Rinser/Filler/Capper",
-    "type": "equipment"
-  },
-  "packConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Transports packs to palletizing area",
-    "name": "Pack Conveyor",
-    "type": "equipment"
-  },
-  "packPalletizer": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Stacks packs onto pallets",
-    "name": "Pack Palletizer",
-    "type": "equipment"
-  },
-  "packageScales": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Checks weight of packages",
-    "name": "Package Scales",
-    "type": "equipment"
-  },
-  "packsPathSplitter": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Splits flow of packs from one line conveyor to several",
-    "name": "Packs Path Splitter",
-    "type": "equipment"
-  },
-  "palletConveyor": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Transports empty and full pallets",
-    "name": "Pallet Conveyor",
-    "type": "equipment"
-  },
-  "palletLift": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Moves pallet between floors",
-    "name": "Pallet Lift",
-    "type": "equipment"
-  },
-  "palletStackerDestacker": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Organizes and stacks empty pallets, prepares them for use",
-    "name": "Pallet Stacker/Destacker",
-    "type": "equipment"
-  },
-  "palletStretchPacker": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Secures full pallets with stretch film",
-    "name": "Pallet Stretch Packer",
-    "type": "equipment"
-  },
-  "palletStripper": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Secures full pallets by stripping packs on them",
-    "name": "Pallet Stripper",
-    "type": "equipment"
-  },
-  "palletWrapper": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "FPD": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Wraps and secures full pallets",
-    "name": "Pallet Wrapper",
-    "type": "equipment"
-  },
-  "preformLoader": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Loads PET preforms into the blow molder",
-    "name": "Preform Loader",
-    "type": "equipment"
-  },
-  "printInspector": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Verifies print position and quality on containers/packs",
-    "name": "Print inspector",
-    "type": "equipment"
-  },
-  "printerForContainers": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Prints dates/batch/excise info on containers",
-    "name": "Printer for Containers",
-    "type": "equipment"
-  },
-  "printerForPacks": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Prints dates/batch info on packs",
-    "name": "Printer for Packs",
-    "type": "equipment"
-  },
-  "rinser": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Cleans bottles/cans before filling",
-    "name": "Rinser",
-    "type": "equipment"
-  },
-  "sealCapApplicatorForKegs": {
-    "canBeLocatedIn": {
-      "KEG": true
-    },
-    "description": "Applies seal caps to full kegs",
-    "name": "Seal Cap Applicator for Kegs",
-    "type": "equipment"
-  },
-  "seamer": {
-    "canBeLocatedIn": {
-      "CAN": true
-    },
-    "description": "Seals cans with metal lids",
-    "name": "Seamer",
-    "type": "equipment"
-  },
-  "seamerLidSupply": {
-    "canBeLocatedIn": {
-      "CAN": true
-    },
-    "description": "Supplies lids to the seamer",
-    "name": "Seamer Lid Supply",
-    "type": "equipment"
-  },
-  "shiftDepalletizer": {
-    "canBeLocatedIn": {
-      "BGL": true,
-      "CAN": true
-    },
-    "description": "Unloads bottles/cans layers from pallets",
-    "name": "Shift Depalletizer",
-    "type": "equipment"
-  },
-  "shrinkSleeveThermoTunnel": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "PET": true
-    },
-    "description": "Heat treats containers after shrink sleeve labeling",
-    "name": "Shrink Sleeve Thermo Tunnel",
-    "type": "equipment"
-  },
-  "shrinkWrapper": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Groups containers for easy handling",
-    "name": "Shrink Wrapper",
-    "type": "equipment"
-  },
-  "shrinkWrapsThermoTunnel": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Heat treats wrapped containers",
-    "name": "Shrink Wraps Thermo Tunnel",
-    "type": "equipment"
-  },
-  "singleRowConveyorLigner": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Conveyor system to lign containers from multple to one row",
-    "name": "Single Row Conveyor Ligner ",
-    "type": "equipment"
-  },
-  "spiralWayerForContainers": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "KEG": true,
-      "PET": true
-    },
-    "description": "Moves containers vertically by spiral",
-    "name": "Spiral Conveyor for Containers",
-    "type": "equipment"
-  },
-  "spiralWayerForPacks": {
-    "canBeLocatedIn": {
-      "ASP": true,
-      "BGL": true,
-      "CAN": true,
-      "PET": true
-    },
-    "description": "Moves packs vertically by spiral",
-    "name": "Spiral Conveyor for Packs",
-    "type": "equipment"
-  },
-  "tunnelPasteurizer": {
-    "canBeLocatedIn": {
-      "BGL": true,
-      "CAN": true
-    },
-    "description": "Pasteurizes product already filled in containers",
-    "name": "Tunnel Pasteurizer",
-    "type": "equipment"
+    "ASP": {
+      "canBeLocatedIn": {
+        "FPD": true
+      },
+      "canContainTypes": {
+        "equipment": true
+      },
+      "description": "Blows and sterile fills PET bottles for long shelf-life beverages",
+      "name": "Aseptic PET Bottle Line",
+      "type": "line"
+    },
+    "BGL": {
+      "canBeLocatedIn": {
+        "FPD": true
+      },
+      "canContainTypes": {
+        "equipment": true
+      },
+      "description": "Fills and caps beverages in glass bottles",
+      "name": "Glass Bottle Line",
+      "type": "line"
+    },
+    "CAN": {
+      "canBeLocatedIn": {
+        "FPD": true
+      },
+      "canContainTypes": {
+        "equipment": true
+      },
+      "description": "Fills and seals aluminum or tinplate beverage cans",
+      "name": "Can Line",
+      "type": "line"
+    },
+    "FPD": {
+      "canBeLocatedIn": {
+        "brewery": true
+      },
+      "canContainTypes": {
+        "equipment": true,
+        "line": true
+      },
+      "description": "Area where the final liquid product is prepared for distribution and sale",
+      "name": "Filling and Packaging",
+      "type": "department"
+    },
+    "KEG": {
+      "canBeLocatedIn": {
+        "FPD": true
+      },
+      "canContainTypes": {
+        "equipment": true
+      },
+      "description": "Fills, seals, and labels large metal or plastic kegs",
+      "name": "Keg Line",
+      "type": "line"
+    },
+    "PET": {
+      "canBeLocatedIn": {
+        "FPD": true
+      },
+      "canContainTypes": {
+        "equipment": true
+      },
+      "description": "Blows and fills plastic (PET) bottles",
+      "name": "PET Bottle Line",
+      "type": "line"
+    },
+    "asepticFiller": {
+      "canBeLocatedIn": {
+        "ASP": true
+      },
+      "description": "Fills containers in sterile environment",
+      "name": "Aseptic Filler",
+      "type": "equipment"
+    },
+    "blowMolder": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Molds PET preforms into bottles/kegs",
+      "name": "Blow Molder",
+      "type": "equipment"
+    },
+    "blowMolderChiller": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Uses glycol to cool down molds",
+      "name": "Blow Molder Chiller",
+      "type": "equipment"
+    },
+    "bottleColorShapeInspector": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Determines if bottle is of correct type",
+      "name": "Bottle Color/Shape Inspector",
+      "type": "equipment"
+    },
+    "bottleWasher": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Washes bottles inside and outside with cleaning liquid",
+      "name": "Bottle Washer",
+      "type": "equipment"
+    },
+    "brewery": {
+      "canContainTypes": {
+        "department": true
+      },
+      "description": "Facility that produces beer and other beverages",
+      "name": "Brewery",
+      "type": "facility"
+    },
+    "capper": {
+      "canBeLocatedIn": {
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Seals bottles with caps",
+      "name": "Capper",
+      "type": "equipment"
+    },
+    "capperCapSupply": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Supplies caps to the capper",
+      "name": "Capper Cap Supply",
+      "type": "equipment"
+    },
+    "cartonPacker": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Packs containers into carton box",
+      "name": "Carton Packer",
+      "type": "equipment"
+    },
+    "cipStation": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Station for equipment cleaning in place",
+      "name": "CIP Station",
+      "type": "equipment"
+    },
+    "containerDryer": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Dries containers before labeling",
+      "name": "Container Dryer",
+      "type": "equipment"
+    },
+    "conveyorLubricantSystem": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Supplies lubricant solution to conveyors",
+      "name": "Conveyor Lubricant System",
+      "type": "equipment"
+    },
+    "crateConveyor": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Transports crates from depaletizing to palletizing area",
+      "name": "Crate Conveyor",
+      "type": "equipment"
+    },
+    "crateDepalletizer": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Unloads crates crates from pallets",
+      "name": "Crate Depalletizer",
+      "type": "equipment"
+    },
+    "cratePacker": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Packs bottles into crates",
+      "name": "Crate Packer",
+      "type": "equipment"
+    },
+    "cratePalletizer": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Stacks crates onto pallets",
+      "name": "Crate Palletizer",
+      "type": "equipment"
+    },
+    "crateUnpacker": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Unpacks bottles from crates",
+      "name": "Crate Unpacker",
+      "type": "equipment"
+    },
+    "crateWasher": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Rinses/cleans crates ",
+      "name": "Crate Washer",
+      "type": "equipment"
+    },
+    "cratesPathSplitter": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Splits flow of crates from one line conveyor to several",
+      "name": "Crates Path Splitter",
+      "type": "equipment"
+    },
+    "emptyBottleConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Transports empty glass/plastic bottles to rinser/filler",
+      "name": "Empty Bottle Conveyor",
+      "type": "equipment"
+    },
+    "emptyBottleInspector": {
+      "canBeLocatedIn": {
+        "BGL": true
+      },
+      "description": "Inspects bottle quality before filling",
+      "name": "Empty Bottle Inspector",
+      "type": "equipment"
+    },
+    "emptyCanInspector": {
+      "canBeLocatedIn": {
+        "CAN": true
+      },
+      "description": "Inspects can quality before filling",
+      "name": "Empty Can Inspector",
+      "type": "equipment"
+    },
+    "emptyCanRopeConveyor": {
+      "canBeLocatedIn": {
+        "CAN": true
+      },
+      "description": "Transports empty cans to rinser/filler",
+      "name": "Empty Can Rope Conveyor",
+      "type": "equipment"
+    },
+    "emptyKegConveyor": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Transports empty kegs to rinser/filler",
+      "name": "Empty Keg Conveyor",
+      "type": "equipment"
+    },
+    "emptyPalletConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Supplies empty pallets to palletizer",
+      "name": "Empty Pallet Conveyor",
+      "type": "equipment"
+    },
+    "emptyPetBottleAirConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "PET": true
+      },
+      "description": "Transports empty PET bottles to rinser/filler",
+      "name": "Empty PET Bottle Air Conveyor",
+      "type": "equipment"
+    },
+    "exciseUnit": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Gets excise info for tax services",
+      "name": "Excise Unit",
+      "type": "equipment"
+    },
+    "fillLevelInspector": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Checks liquid levels in sealed containers",
+      "name": "Fill Level Inspector",
+      "type": "equipment"
+    },
+    "fillLevelKegScales": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Checks liquid weight in kegs",
+      "name": "Fill Level Keg Scales",
+      "type": "equipment"
+    },
+    "filledContainerConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Moves filled bottles/cans to packaging area",
+      "name": "Filled Container Conveyor",
+      "type": "equipment"
+    },
+    "filledKegConveyor": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Moves filled kegs to packaging area",
+      "name": "Filled Keg Conveyor",
+      "type": "equipment"
+    },
+    "filler": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Fills containers with liquid",
+      "name": "Filler",
+      "type": "equipment"
+    },
+    "flashPasteurizer": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Pasteurizes product before being filled",
+      "name": "Flash Pasteurizer",
+      "type": "equipment"
+    },
+    "foamSupplySystem": {
+      "canBeLocatedIn": {
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "PET": true
+      },
+      "description": "Supplies foam for filler cleaning",
+      "name": "Foam Supply System",
+      "type": "equipment"
+    },
+    "fullPalletConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Moves full pallets to storage/distribution area",
+      "name": "Full Pallet Conveyor",
+      "type": "equipment"
+    },
+    "general": {
+      "canBeLocatedIn": {
+        "*": true
+      },
+      "description": "General location or equipment group",
+      "name": "General",
+      "type": "general"
+    },
+    "handleApplicator": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "PET": true
+      },
+      "description": "Applies handles to PET bottles before packaging",
+      "name": "Handle Applicator",
+      "type": "equipment"
+    },
+    "highPressurePumpSystem": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Provides liquid with high pressure for cleaning",
+      "name": "High Pressure Pump System",
+      "type": "equipment"
+    },
+    "inlineQualityControl": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Checks product quality before filling",
+      "name": "Inline Quality Control",
+      "type": "equipment"
+    },
+    "kegCleaningLiquidsSupply": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Supplies cleaning liquids for keg cleaning",
+      "name": "Keg Cleaning Liquids Supply",
+      "type": "equipment"
+    },
+    "kegInnerCleaner": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Cleans kegs inside",
+      "name": "Keg Inner Cleaner",
+      "type": "equipment"
+    },
+    "kegLeakageInspector": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Detects leakages at filled kegs",
+      "name": "Keg Leakage Inspector",
+      "type": "equipment"
+    },
+    "kegPalletizer": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Stacks kegs onto pallets",
+      "name": "Keg Palletizer",
+      "type": "equipment"
+    },
+    "kegResidualPressureInspector": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Detects if empty keg has residual pressure",
+      "name": "Keg Residual Pressure Inspector",
+      "type": "equipment"
+    },
+    "kegWasher": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Washes kegs outside",
+      "name": "Keg Washer",
+      "type": "equipment"
+    },
+    "labelApplicatorForContainers": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Applies labels for date/batch/excise coding on containers",
+      "name": "Label Applicator for Containers",
+      "type": "equipment"
+    },
+    "labelApplicatorForPacks": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Applies labels for date/batch coding on packs",
+      "name": "Label Applicator for Packs",
+      "type": "equipment"
+    },
+    "labelApplicatorForPallets": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Applies labels for date/batch/logistics coding on pallets",
+      "name": "Label Applicator for Pallets",
+      "type": "equipment"
+    },
+    "labelInspector": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Verifies label position and quality on containers",
+      "name": "Label Inspector",
+      "type": "equipment"
+    },
+    "labelPositioningSystem": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Determines correct bottle angle to put label",
+      "name": "Label Positioning System",
+      "type": "equipment"
+    },
+    "labellerColdGlue": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Applies labels with cold glue",
+      "name": "Labeller - Cold Glue",
+      "type": "equipment"
+    },
+    "labellerHotGlue": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Applies labels using hot glue",
+      "name": "Labeller - Hot Glue",
+      "type": "equipment"
+    },
+    "labellerSelfAdhesive": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Applies self-adhesive labels",
+      "name": "Labeller - Self-Adhesive",
+      "type": "equipment"
+    },
+    "labellerServoDrives": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Servo drives system of modular labeller",
+      "name": "Labeller Servo Drives",
+      "type": "equipment"
+    },
+    "labellerShrinkSleeve": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Applies shrink sleeve labels",
+      "name": "Labeller - Shrink Sleeve",
+      "type": "equipment"
+    },
+    "mixer": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Mixes water, syrup and CO2 to prepare soft drink ",
+      "name": "Mixer",
+      "type": "equipment"
+    },
+    "modularLabeller": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Applies various label types using interchangeable modules",
+      "name": "Modular Labeller",
+      "type": "equipment"
+    },
+    "monoblockFillerSealer": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Fills and seals containers",
+      "name": "Monoblock Filler/Capper",
+      "type": "equipment"
+    },
+    "monoblockKegCleanerFiller": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Cleans inside (CIP), sterilizes and fills kegs",
+      "name": "Monoblock Keg Cleaner/Filler",
+      "type": "equipment"
+    },
+    "monoblockRinserFiller": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Rinses and fills containers",
+      "name": "Monoblock Rinser/Filler",
+      "type": "equipment"
+    },
+    "monoblockRinserFillerCapper": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Rinses, fills and seals containers",
+      "name": "Monoblock Rinser/Filler/Capper",
+      "type": "equipment"
+    },
+    "packConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Transports packs to palletizing area",
+      "name": "Pack Conveyor",
+      "type": "equipment"
+    },
+    "packPalletizer": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Stacks packs onto pallets",
+      "name": "Pack Palletizer",
+      "type": "equipment"
+    },
+    "packageScales": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Checks weight of packages",
+      "name": "Package Scales",
+      "type": "equipment"
+    },
+    "packsPathSplitter": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Splits flow of packs from one line conveyor to several",
+      "name": "Packs Path Splitter",
+      "type": "equipment"
+    },
+    "palletConveyor": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Transports empty and full pallets",
+      "name": "Pallet Conveyor",
+      "type": "equipment"
+    },
+    "palletLift": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Moves pallet between floors",
+      "name": "Pallet Lift",
+      "type": "equipment"
+    },
+    "palletStackerDestacker": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Organizes and stacks empty pallets, prepares them for use",
+      "name": "Pallet Stacker/Destacker",
+      "type": "equipment"
+    },
+    "palletStretchPacker": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Secures full pallets with stretch film",
+      "name": "Pallet Stretch Packer",
+      "type": "equipment"
+    },
+    "palletStripper": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Secures full pallets by stripping packs on them",
+      "name": "Pallet Stripper",
+      "type": "equipment"
+    },
+    "palletWrapper": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "FPD": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Wraps and secures full pallets",
+      "name": "Pallet Wrapper",
+      "type": "equipment"
+    },
+    "preformLoader": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Loads PET preforms into the blow molder",
+      "name": "Preform Loader",
+      "type": "equipment"
+    },
+    "printInspector": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Verifies print position and quality on containers/packs",
+      "name": "Print inspector",
+      "type": "equipment"
+    },
+    "printerForContainers": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Prints dates/batch/excise info on containers",
+      "name": "Printer for Containers",
+      "type": "equipment"
+    },
+    "printerForPacks": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Prints dates/batch info on packs",
+      "name": "Printer for Packs",
+      "type": "equipment"
+    },
+    "rinser": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Cleans bottles/cans before filling",
+      "name": "Rinser",
+      "type": "equipment"
+    },
+    "sealCapApplicatorForKegs": {
+      "canBeLocatedIn": {
+        "KEG": true
+      },
+      "description": "Applies seal caps to full kegs",
+      "name": "Seal Cap Applicator for Kegs",
+      "type": "equipment"
+    },
+    "seamer": {
+      "canBeLocatedIn": {
+        "CAN": true
+      },
+      "description": "Seals cans with metal lids",
+      "name": "Seamer",
+      "type": "equipment"
+    },
+    "seamerLidSupply": {
+      "canBeLocatedIn": {
+        "CAN": true
+      },
+      "description": "Supplies lids to the seamer",
+      "name": "Seamer Lid Supply",
+      "type": "equipment"
+    },
+    "shiftDepalletizer": {
+      "canBeLocatedIn": {
+        "BGL": true,
+        "CAN": true
+      },
+      "description": "Unloads bottles/cans layers from pallets",
+      "name": "Shift Depalletizer",
+      "type": "equipment"
+    },
+    "shrinkSleeveThermoTunnel": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "PET": true
+      },
+      "description": "Heat treats containers after shrink sleeve labeling",
+      "name": "Shrink Sleeve Thermo Tunnel",
+      "type": "equipment"
+    },
+    "shrinkWrapper": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Groups containers for easy handling",
+      "name": "Shrink Wrapper",
+      "type": "equipment"
+    },
+    "shrinkWrapsThermoTunnel": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Heat treats wrapped containers",
+      "name": "Shrink Wraps Thermo Tunnel",
+      "type": "equipment"
+    },
+    "singleRowConveyorAligner": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Conveyor system to lign containers from multple to one row",
+      "name": "Single Row Conveyor Ligner ",
+      "type": "equipment"
+    },
+    "spiralWayerForContainers": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "KEG": true,
+        "PET": true
+      },
+      "description": "Moves containers vertically by spiral",
+      "name": "Spiral Conveyor for Containers",
+      "type": "equipment"
+    },
+    "spiralWayerForPacks": {
+      "canBeLocatedIn": {
+        "ASP": true,
+        "BGL": true,
+        "CAN": true,
+        "PET": true
+      },
+      "description": "Moves packs vertically by spiral",
+      "name": "Spiral Conveyor for Packs",
+      "type": "equipment"
+    },
+    "tunnelPasteurizer": {
+      "canBeLocatedIn": {
+        "BGL": true,
+        "CAN": true
+      },
+      "description": "Pasteurizes product already filled in containers",
+      "name": "Tunnel Pasteurizer",
+      "type": "equipment"
+    }
   }
 }
