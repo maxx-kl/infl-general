@@ -331,16 +331,16 @@ export interface CheckListItem {
   text: string;
   creatorKey: string;
   creatorName: string;
-  dateCreated: number;
+  dateCreated: number | any;
   deleted?: boolean;
-  lastUpdated?: number;
+  lastUpdated?: number | any;
   updatedByKey?: string;
   updatedByName?: string;
-  checkedDate?: number;
+  checkedDate?: number | any;
   checkedByKey?: string;
   checkedByName?: string;
   checkListKey?: string;
-  due?: number;
+  due?: number | any;
   dueSetByKey?: string;
   records?: ObjMap<boolean>;
   dueSetByName?: string;
@@ -363,6 +363,7 @@ export interface TreeItem {
   parentKey: string;
   path: string;
   details?: any;
+  level?: number;
   // recordCount?: Observable<number>;
   // problemCount?: Observable<number>;
   // processCount?: Observable<number>;
