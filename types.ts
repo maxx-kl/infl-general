@@ -22,7 +22,7 @@
 // tslint:disable-next-line:import-blacklist
 //import {Observable} from 'rxjs';
 
-interface ObjMap<T> {
+export interface ObjMap<T> {
   [x: string]: T; // 'x' can be any string, and the corresponding value will be of type T
 }
 
