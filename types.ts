@@ -326,6 +326,7 @@ export interface Card {
 
 
 export interface CheckListItem {
+  $key?: string;
   checked: boolean;
   order: number;
   text: string;
