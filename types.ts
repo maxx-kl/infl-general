@@ -115,6 +115,9 @@ export interface Record {
   // Keys of connected checklists, will be implemented in realtime DB
   checkLists: ObjMap<CheckListItem> | undefined;
 
+  quality?: boolean;
+  qualityAnomalies?: { [key: string]: Boolean };
+
   // Hash ID for the record, used for short links service.
   hashId: string | undefined;
 
@@ -453,6 +456,12 @@ export interface Translation {
   original: string;
   detectedLanguage: string;
   translations: ObjMap<string>;
+}
+
+export interface Label {
+  $key: string;
+  name: string;
+  color: string;
 }
 
 // bg color for banner: rgb(26 128 98)
