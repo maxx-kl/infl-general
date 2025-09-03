@@ -1,4 +1,4 @@
-import {ObjMap} from "./types";
+import {ObjMap} from "./general-types";
 
 export interface CheckListItem {
     $key?: string;

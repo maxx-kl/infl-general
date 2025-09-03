@@ -1,6 +1,6 @@
 
 // BoardList represents a column or list within a board.
-import {ImageData, ObjMap} from "./types";
+import {ImageData, ObjMap} from "./general-types";
 import {CheckListItem} from "./checklist-types";
 
 export interface BoardList {
