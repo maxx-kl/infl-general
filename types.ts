@@ -22,6 +22,9 @@
 // tslint:disable-next-line:import-blacklist
 //import {Observable} from 'rxjs';
 
+import {Board, BoardList} from "./canban-types";
+import {CheckListItem} from "./checklist-types";
+
 export interface ObjMap<T> {
   [x: string]: T; // 'x' can be any string, and the corresponding value will be of type T
 }
@@ -46,8 +49,8 @@ export interface Record {
   // Reference to the parent record, if any, otherwise undefined. Only 'workRecord' can have it
   parentRecordRef: string | undefined;
 
-  boards: ObjMap<Board> | undefined;
-  boardLists: ObjMap<BoardList> | undefined;
+  boards?: ObjMap<Board> | undefined;
+  boardLists?: ObjMap<BoardList> | undefined;
   header: string | undefined;
 
   // Flag indicating if the problem is closed, or undefined if not yet determined.
@@ -294,70 +297,8 @@ export interface PathItem {
   types: any[];
 }
 
-// BoardList represents a column or list within a board.
-export interface BoardList {
-  key: string; // Unique identifier for the list
-  name: string; // Display name of the list
-  boardKey: string; // Reference to the board it belongs to
-  cards: Card[]; // Array of cards in this list
-  position: number; // Position of the list within the board
-}
-
-// Board represents the entire board, with multiple lists.
-export interface Board {
-  key: string; // Unique identifier for the board
-  title: string; // Title of the board
-  description?: string; // Optional description of the board
-  lists: ObjMap<BoardList>; // All lists within the board
-  background?: string; // Board background color or image
-}
-
-// Card represents the tasks or items inside a list.
-export interface Card {
-  key: string; // Unique identifier for the card
-  boardKey: string; // Unique identifier for the board
-  listKey: string; // Reference to the list it belongs to
-  title: string; // Title of the card
-  description?: string; // Optional description of the card
-  position: number; // Position within the list
-  color?: string; // Optional card color
-  dueDate?: Date; // Optional due date for the card
-  labels?: string[]; // Optional array of labels
-  images?: ImageData[]; // Optional array of labels
-  checkLists?: CheckListItem[]; // Optional array of labels
-}
 
 
-export interface CheckListItem {
-  $key?: string;
-  checked: boolean;
-  order: number;
-  text: string;
-  creatorKey: string;
-  creatorName: string;
-  dateCreated: number | any;
-  deleted?: boolean;
-  lastUpdated?: number | any;
-  updatedByKey?: string;
-  updatedByName?: string;
-  checkedDate?: number | any;
-  checkedByKey?: string;
-  checkedByName?: string;
-  checkListKey?: string;
-  due?: number | any;
-  dueSetByKey?: string;
-  records?: ObjMap<boolean>;
-  dueSetByName?: string;
-  responsible?: string;
-  responsibleSetByKey?: string;
-  responsibleSetByName?: string;
-  facilityKey: string;
-}
-
-export interface CheckListInfo {
-  totalCounter: number;
-  checkedCounter: number;
-}
 
 
 export interface TreeItem {
