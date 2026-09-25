@@ -1,7 +1,8 @@
 
 // BoardList represents a column or list within a board.
-import {ImageData, ObjMap} from "./general-types";
+import {ObjMap} from "./general-types";
 import {CheckListItem} from "./checklist-types";
+import {MediaItem} from "./records-types";
 
 export interface BoardList {
     key: string; // Unique identifier for the list
@@ -31,6 +32,6 @@ export interface Card {
     color?: string; // Optional card color
     dueDate?: Date; // Optional due date for the card
     labels?: string[]; // Optional array of labels
-    images?: ImageData[]; // Optional array of labels
+    images?: MediaItem[]; // Optional array of labels
     checkLists?: CheckListItem[]; // Optional array of labels
 }
